@@ -7,13 +7,45 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Timer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 </head>
 
 <body>
+    <div class="container">
+        <h1 class="heading">Simple Countdown Timer</h1>
+        <div class="timer">
+            <div class="controls">
+                <input id="duration" value="30" autocomplete="off" name="minutes" />
 
-    <input type="text" id="duration" value="30">
-    <button id="start">Start</button>
-    <button id="pause">Pause</button>
+                <div class="buttons">
+                    <button id="start"><i class="uil uil-play"></i></button>
+                    <button id="pause"><i class="uil uil-pause"></i></button>
+                    <button id="reset"><i class="uil uil-history"></i></button>
+                </div>
+            </div>
+
+            <svg class="dial">
+                <g color="#f5f5dc">
+                    <circle
+                  fill="transparent"
+                  stroke="currentcolor"
+                  stroke-width="7.5"
+                  r="190"
+                  cx="0"
+                  cy="200"
+                  transform="rotate(-90 100 100)"
+                />
+                </g>
+                
+              </svg>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <p>Developed by <a href="https://github.com/tonymaung">Tony Maung</a></p>
+    </footer>
+    <script src="timer.js"></script>
     <script src="script.js "></script>
 </body>
 
